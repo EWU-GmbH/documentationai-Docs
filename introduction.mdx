@@ -1,0 +1,104 @@
+---
+title: Welcome to EWU
+description: Get an overview of EWU, a documentation management platform designed to help teams organize and maintain project documentation efficiently.
+---
+
+<Callout kind="info" title="Starter Kit Template">
+  This documentation was generated as a starter kit template based on your brand. Please review and customize the content to accurately reflect your product's features, APIs, and capabilities.
+</Callout>
+
+## Overview
+
+EWU provides a centralized space for your teams to create, organize, and manage project documentation. You can build structured docs with version control, search, and collaboration features. Whether documenting APIs, user guides, or internal processes, EWU keeps everything accessible and up-to-date.
+
+Use EWU to streamline knowledge sharing, reduce onboarding time, and ensure consistency across your projects.
+
+## Key Features
+
+Discover the core capabilities that make EWU powerful for documentation workflows.
+
+<Columns cols={3}>
+  <Card title="Structured Pages" icon="book-open" href="#structured-pages">
+    Create nested pages with frontmatter, components, and rich media support.
+  </Card>
+  <Card title="Collaboration" icon="users" href="#collaboration">
+    Real-time editing, comments, and version history for team contributions.
+  </Card>
+  <Card title="Search & Navigation" icon="search" href="#search">
+    Full-text search and intuitive sidebar navigation to find content quickly.
+  </Card>
+</Columns>
+
+## Who Should Use EWU
+
+<Tabs>
+  <Tab title="Development Teams" icon="code">
+    Document APIs, SDKs, and deployment guides with code examples and interactive components.
+  </Tab>
+  <Tab title="Product Managers" icon="trending-up">
+    Maintain user guides, changelogs, and feature roadmaps in one place.
+  </Tab>
+  <Tab title="Support Teams" icon="headphones">
+    Build FAQs, troubleshooting steps, and knowledge bases for faster resolutions.
+  </Tab>
+</Tabs>
+
+## Quick Start
+
+Get up and running with EWU in minutes.
+
+<Steps>
+  <Step title="Sign Up" icon="user-plus">
+    Create your free account at `https://app.ewu.com/signup`.
+  </Step>
+  <Step title="Create Workspace" icon="package">
+    Set up a new workspace for your project.
+    
+    ```bash
+    npx create-ewu-workspace my-docs
+    cd my-docs
+    ```
+  </Step>
+  <Step title="Add First Page" icon="plus">
+    <CodeGroup tabs="CLI,UI">
+      ```bash
+      ewu pages create introduction.mdx
+      ```
+      ```typescript
+      // Edit introduction.mdx with your content
+      const frontmatter = {
+        title: "Welcome",
+        description: "Overview page"
+      };
+      ```
+    </CodeGroup>
+  </Step>
+  <Step title="Publish" icon="globe">
+    Deploy your docs to a live URL.
+    
+    ```bash
+    ewu deploy
+    ```
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+  Ready for more? Check the [Quickstart guide](/quickstart) for advanced setup.
+</Callout>
+
+## Next Steps
+
+<Columns cols={2}>
+  <Card title="Quickstart" icon="zap" href="/quickstart">
+    Dive into detailed installation and first project setup.
+  </Card>
+  <Card title="Authentication" icon="lock" href="/authentication">
+    Secure your workspace with API keys and user management.
+  </Card>
+  <Card title="Changelog" icon="git-branch" href="/changelog">
+    Track updates and new features.
+  </Card>
+  <Card title="Help Center" icon="help-circle" href="/help-center">
+    FAQs and troubleshooting resources.
+  </Card>
+</Columns>
